@@ -1,1 +1,16 @@
-# M7-Poetry-Slam
+# System Title: 
+## PTSD (Poems That Scare & Daunt)
+
+# Description: 
+### This poem generator simply produces a lyric poem that tries to scare you. The irony/humor in this poem generator however is that it uses one of the most heartwarming and calming pieces of text to help achieve this! After producing a poem, the poem generator is able to evaluate its poem based on the poem’s Horror Level and Quality. It will then give the user the option to save the poem as a text file if they would like. Finally, the poem generator will actually speak the poem out loud, and even give the user a chance to view the poem in a scary, new webpage (where they can also listen to it out loud again).
+
+# How to run it:
+### To set up and run this program, all the user has to do is click on the 'Run' arrow in the top right corner in VS Code (or whatever other coding software they are using). The program will then run, printing the poem (as well as it's evaluation scores) and reading it out loud. The user will then be asked if they want to save the poem to a text file. If they do, they will type 'y' in the terminal and it will be saved. If they do not, then they will type 'n' in the terminal and it will not be saved. Finally, a link starting with 'http:' will appear in the terminal. The user can click on this link and it will take them to a new webpage where the poem will be displayed again (in a more horrifying fashion this time). There will be a button on the screen giving the user the option to have the poem read out loud again.
+
+# How this challenged you:
+### Working on this system challenged me as a computer scientist because it forced me to combine different computer science languages, use methods/libraries that I've never used before (ex. Spacy, Flask) in order to refine the poem for quality, and consider how I would present the poem so that it was actually interesting and would actually get a reaction out of the user (ex.Researching good words to use, adjusting the voice to make it scarier when read out loud, learning how to edit HTML code so that the webpage would be interesting to the user).
+
+# Three scholarly articles I referenced:
+### 1. "Stephen King's 20 Rules for Writers" from openculture.com. Stephen King is know for writing great horror stories, and since this is system generates horror poems, I just wanted to pick his mind a little bit about what he thinks about when writing horror stories.
+### 2. "Automated Sentiment Analysis of Text Data with NLTK" by Jiawei Yao. I read this when trying to decide how I wanted to break down/construct/edit my text. I didn't end up using the exact libraries/methods they discuss, but it was still a very interesting and helpful read.
+### 3. "Study of Python libraries for NLP" by Anand Khandare, Nipun Agarwal, Amruta Bodhankar, Ankur Kulkarni, Ishaan Mane. I also read this when trying to decide how I wanted to break down/construct/edit my text. This helped me decide that I wanted to use Spacy (especially because I remeembered it being demoed in class).

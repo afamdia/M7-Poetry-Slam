@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Horror Poem!</title>
+    <meta charset="utf-8">
+    <style>
+      body {
+        text-align: center;
+        animation: blink 1s infinite;
+      }
+
+      @keyframes blink {
+        0% {
+          background: grey
+        }
+        20% {
+          background: white
+        }
+        40% {
+          background: grey
+        }
+        60% {
+          background: white
+        }
+        80% {
+          background: grey
+        }
+        100% {
+          background: white
+        }
+      }
+    </style>
+  </head>
+  <body>
+
+    <h1 style="color: red; font-weight: bold;"> PTSD (Poems That Scare & Daunt) </h1>
+    <pre>{{ final_poem }}</pre>
+    <button id="speak-button" onclick="sayIt()">Click to hear poem!</button>
+    <script>
+
+      var poem = document.querySelector('pre').textContent;
+
+      var synthesis = window.speechSynthesis;
+      var utterance = new SpeechSynthesisUtterance(poem);
+      var voices = synthesis.getVoices();
+
+
+      function sayIt() {
+        if ('speechSynthesis' in window) {
+
+          utterance.voice = voices[0];  
+          console.log(voices[0]);
+
+          utterance.pitch = 0.25;
+          utterance.rate = 0.5;
+          utterance.volume = 1.0;
+
+          synthesis.speak(utterance);
+        } else {
+          console.log('Text-to-speech not supported.');
+        }
+      };
+
+    </script>
+    
+  </body>
+</html>
